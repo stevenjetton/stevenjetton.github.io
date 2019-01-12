@@ -79,7 +79,7 @@ header .content-wrapper {
   justify-content: center;
   flex-flow: row wrap;
   margin: 20px 0;
-  width: 55%;
+  width: 61%;
 }
 
 header h1 {
@@ -231,6 +231,11 @@ footer p {
       Media Queries
 
      =========================================================================*/
+@media (min-width: 736px) {
+  .logo {
+    width: 55%;
+  }
+}
 @media (min-width: 768px) {
   /* GLOBAL STYLES */
   /* HEADER STYLES */
