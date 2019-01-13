@@ -1,6 +1,7 @@
 /* GLOBAL AND FONT STYLES */
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'Source Code Pro', monospace;
@@ -131,6 +132,10 @@ nav ul li {
   padding: 0;
 }
 /* MAIN STYLES */
+main .ease-one {
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+}
 main {
   background-color: #347B98;
 }
