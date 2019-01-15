@@ -132,10 +132,6 @@ nav ul li {
   padding: 0;
 }
 /* MAIN STYLES */
-main .ease-one {
-  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-  transition: width 2s;
-}
 main {
   background-color: #347B98;
 }
@@ -160,7 +156,6 @@ main h5 {
   background: url('../img/about.png') center no-repeat;
   background-size: cover;
   min-height: 550px;
-
 }
 
 #about h3 {
