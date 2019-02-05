@@ -267,6 +267,11 @@ footer p {
   nav ul li {
     width: 35%;
   }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
   /* PORTFOLIO STYLES */
   main .content-text {
     display: flex;
@@ -329,16 +334,10 @@ footer p {
     align-items: center;
   }
 
-  nav .menu {
-
-  }
-
-  nav .menu ul {
-
-  }
   nav ul li {
     width: 20%
   }
+  
   /* MAIN STYLES */
   .content {
     display: flex;
