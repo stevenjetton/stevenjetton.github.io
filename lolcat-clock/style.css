@@ -1,6 +1,15 @@
 body {
   background-color: #f16059;
 }
+
+h3 {
+    margin: 2em;
+}
+
+h3 a {
+  text-decoration: none;
+  color: black;
+}
 .page {
   width: 80%;
   max-width: 960px;
