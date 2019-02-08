@@ -271,6 +271,7 @@ footer p {
   nav ul {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
   /* PORTFOLIO STYLES */
   main .content-text {
@@ -337,7 +338,7 @@ footer p {
   nav ul li {
     width: 20%
   }
-  
+
   /* MAIN STYLES */
   .content {
     display: flex;

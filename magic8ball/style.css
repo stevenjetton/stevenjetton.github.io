@@ -6,6 +6,17 @@ body {
   background-color: #f8f8f8;
   background-image: url('bkgd2.png');
 }
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+h4 {
+  font-size: 2em;
+  margin: 20px;
+}
+
 .page {
   width: 80%;
   max-width: 960px;
