@@ -74,4 +74,46 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // === NAV DROPDOWN ACCESSIBILITY ===
+  document.addEventListener('DOMContentLoaded', function () {
+    var dropdown = document.querySelector('.nav__dropdown');
+    var toggle = dropdown && dropdown.querySelector('.nav__dropdown-toggle');
+    var menu = dropdown && dropdown.querySelector('.nav__dropdown-menu');
+    if (!dropdown || !toggle || !menu) return;
+
+    // Open on click/focus/hover
+    function openMenu() {
+      menu.style.display = 'block';
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+    function closeMenu() {
+      menu.style.display = '';
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+    toggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      if (menu.style.display === 'block') {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+    toggle.addEventListener('focus', openMenu);
+    toggle.addEventListener('mouseenter', openMenu);
+    dropdown.addEventListener('mouseleave', closeMenu);
+    menu.addEventListener('mouseenter', openMenu);
+    menu.addEventListener('mouseleave', closeMenu);
+    // Keyboard: close on Escape
+    toggle.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+    menu.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+    // Close on outside click
+    document.addEventListener('click', function(e) {
+      if (!dropdown.contains(e.target)) closeMenu();
+    });
+  });
 });
