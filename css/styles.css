@@ -1,3 +1,7 @@
+html[data-theme="dark"] .btn:hover,
+html[data-theme="dark"] .btn:focus-visible {
+  color: #fff;
+}
 /* === THEME ROOTS === */
 :root {
       --nav-toggle-bar-bg: #23221f;
